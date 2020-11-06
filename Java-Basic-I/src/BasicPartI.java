@@ -66,6 +66,52 @@ public class BasicPartI {
         System.out.println("4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))="+4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
     }
 
+//11. Write a Java program to print the area and perimeter of a circle.
+    public static void CircleArea(float r){
+        System.out.println("The area of a circle with radius "+r+" is: "+Math.PI*r*r);
+    }
+//12. Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+    public static void average(int a, int b, int c){
+        System.out.printf("The average of %d, %d, and %d is "+(a+b+c)/3+"%n",a,b,c);
+    }
+//13. Write a Java program to print the area and perimeter of a rectangle.
+    public static void rectangle(int l, int w){
+        System.out.printf("The area of a rectangle with length %d and width %d is "+(l*w)+"%n",l,w);
+        System.out.printf("The perimeter of a rectangle with length %d and width %d is " +(2*l+2*w)+"%n",l,w);
+    }
+//14. Write a Java program to print an American flag on the screen.
+    public static void flag(){
+        System.out.println("* * * * * * ===================================");
+        System.out.println(" * * * * *  ===================================");
+        System.out.println("* * * * * * ===================================");
+        System.out.println(" * * * * *  ===================================");
+        System.out.println("* * * * * * ===================================");
+        System.out.println(" * * * * *  ===================================");
+        System.out.println("* * * * * * ===================================");
+        System.out.println(" * * * * *  ===================================");
+        System.out.println("* * * * * * ===================================");
+        System.out.println("===============================================");
+        System.out.println("===============================================");
+        System.out.println("===============================================");
+        System.out.println("===============================================");
+        System.out.println("===============================================");
+        System.out.println("===============================================");
+    }
+//15. Write a Java program to swap two variables.
+    public static void swap(int a, int b){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("The new variables are "+a+" and "+b);
+    }
+//16. Write a Java program to print a face.
+    public static void face(){
+        System.out.println("  +\"\"\"\"\"+ ");
+        System.out.println("[ | o o | ]");
+        System.out.println("  |  ^  |");
+        System.out.println("  | '-' |");
+        System.out.println("  +-----+");
+    }
 
     public static void main (String[] args){
         Hello();
@@ -78,6 +124,13 @@ public class BasicPartI {
         LetterPattern();
         Compute();
         Formula();
+        CircleArea(2);
+        average(2,5,10);
+        rectangle(2,4);
+        flag();
+        swap(2,4);
+        face();
+
     }
 }
 
