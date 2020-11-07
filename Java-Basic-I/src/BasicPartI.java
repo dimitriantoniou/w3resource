@@ -112,7 +112,27 @@ public class BasicPartI {
         System.out.println("  | '-' |");
         System.out.println("  +-----+");
     }
-
+//32. Write a Java program to compare two numbers.
+    public static void compare(int a, int b){
+        if (a==b){
+            System.out.println(a+"="+b);
+        }else{
+            System.out.println(a+"!="+b);
+            if (a>b){
+                System.out.println(a+">"+b);
+            }else{
+                System.out.println(a+"<"+b);
+            }
+        }
+    }
+//33. Write a Java program and compute the sum of the digits of an integer.
+    public static void sumDigits(int a){
+        int sum=0;
+        while(a!=0){
+            sum+=a%10;
+            a/=10;
+        }System.out.println("Sum of the digits is: "+sum);
+    }
     public static void main (String[] args){
         Hello();
         Sum(2,2);
@@ -130,6 +150,8 @@ public class BasicPartI {
         flag();
         swap(2,4);
         face();
+        compare(25,39);
+        sumDigits(437);
 
     }
 }
